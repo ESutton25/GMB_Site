@@ -1,0 +1,119 @@
+.name {
+  font-family: 'Sirin Stencil', sans-serif;
+  font-size: 3.5rem;
+}
+
+.name2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 2%;
+}
+
+.pages {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.75rem;
+  word-spacing: 0.5rem;
+}
+
+.body-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.cont-nav {
+  margin-top: 1rem;
+}
+
+.nav-link {
+  /* Remove padding under navbar items so bottom border closer to item */
+  padding-bottom: 0 !important;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #000;
+}
+
+.nav-link.active {
+  border-bottom: 1px solid #000;
+}
+
+.art-row {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+/* container class for each piece of artwork and hover label */
+.art-cont {
+  max-width: 40%;
+}
+
+/* class for each img of artwork */
+.art-img {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.abt-img {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+/* container that will overlay img during mouseover to add opacity */
+.hover-effect {
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+}
+
+/* the text that will appear during mouseover of the artwork */
+.hover-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.footer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 0;
+  border-top: 1px solid #000;
+}
+
+.footer-contact {
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.contact-icon {
+  /* positions Instagram/LinkedIn icons to align with text */
+  position: relative;
+  top: -10px;
+  color: #000;
+}
+
+.bkg-img {
+  opacity: 0.15;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  z-index: -10;
+}
+
+
+/* ---------------mouseover effects for artwork------------------ */
+.art-cont:hover .art-img {
+  opacity: 0.15;
+}
+
+.art-cont:hover .hover-effect {
+  opacity: 1;
+}
